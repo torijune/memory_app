@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가족 이야기 보관함</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f5f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-image: url('/static/iamges/back_image.png'); /* 배경 이미지 설정 */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* 배경을 고정 */
+        }
+        header {
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        header h1 {
+            font-size: 48px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        form {
+            background-color: transparent;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        label {
+            font-size: 18px;
+            color: #555;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 헤더 이미지와 제목 -->
+    <header>
+        <h1>가족 이야기 보관함</h1>
+    </header>
+
+    <!-- 메인 콘텐츠 -->
+    <main>
+        <p>이곳은 어르신들의 소중한 가족 이야기를 보관하고 다시 들려드리는 공간입니다.</p>
+
+        <form action="/generate" method="POST">
+            <label for="speaker">어르신 이름을 입력하세요:</label><br>
+            <input type="text" id="speaker" name="speaker" required><br><br>
+
+            <label for="prompt">어르신과 나누고 싶은 대화를 입력하세요:</label><br>
+            <textarea id="prompt" name="prompt" rows="4" cols="50" required></textarea><br><br>
+
+            <input type="submit" value="이야기 생성">
+        </form>
+    </main>
+
+    <!-- 푸터 -->
+    <footer>
+        © 2024 가족 이야기 보관함
+    </footer>
+
+</body>
+</html>

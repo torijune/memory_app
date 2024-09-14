@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이야기 음성 파일</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #4CAF50;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        .audio-box {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        audio {
+            margin-top: 20px;
+        }
+
+        a {
+            display: block;
+            margin-top: 20px;
+            font-size: 1.1em;
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎧 이야기 음성 파일</h1>
+
+    <!-- 음성 파일이 성공적으로 생성되었을 때 오디오 플레이어 표시 -->
+    <div class="audio-box">
+        <p>✅ 음성 파일이 성공적으로 생성되었습니다. 아래에서 이야기를 들으실 수 있습니다.</p>
+        <audio controls>
+            <source src="/static/audio/output.mp3" type="audio/mp3">
+            브라우저에서 음성을 재생할 수 없습니다.
+        </audio>
+    </div>
+
+    <!-- 처음으로 돌아가는 버튼 -->
+    <a class="button" href="/">🏠 처음으로 돌아가기</a>
+</body>
+</html>
