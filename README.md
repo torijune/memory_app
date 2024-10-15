@@ -7,7 +7,6 @@ This project is a web-based application designed to assist elderly users in nurs
 - **Text-to-Speech (TTS) Integration:** Converts text-based stories and chatbot conversations into audio files.
 - **Chatbot using LLMs:** A conversational agent that responds to user prompts.
 - **User-Friendly Interface:** A simple and accessible web interface tailored to the elderly.
-- **Story Archive:** A space where users can create and listen to family-related stories.
 - **Flask Backend:** A lightweight web server powered by Flask to handle requests and responses.
 
 ## Structure
